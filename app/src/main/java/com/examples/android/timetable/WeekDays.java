@@ -11,7 +11,7 @@ import java.util.Locale;
 
 public class WeekDays extends AppCompatActivity {
 
-    TextView today,monday,tuesday,wednesday,thrusday,friday;
+    TextView today,monday,tuesday,wednesday, thursday,friday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +51,11 @@ public class WeekDays extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        thrusday = (TextView) findViewById(R.id.thrusday);
-        thrusday.setOnClickListener(new View.OnClickListener() {
+        thursday = (TextView) findViewById(R.id.thursday);
+        thursday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = Schedule.newIntent(WeekDays.this, "Thrusday");
+                Intent intent = Schedule.newIntent(WeekDays.this, "Thursday");
                 startActivity(intent);
             }
         });

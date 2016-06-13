@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Thrusday"
-        android:id="@+id/thrusday"
+        android:id="@+id/thursday"
         android:padding="16dp"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"/>
