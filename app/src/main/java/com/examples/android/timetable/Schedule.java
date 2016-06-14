@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Schedule extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class Schedule extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    ArrayList<String> myDataset = new ArrayList<>();
+    List<Lecture> myDataset = new ArrayList<>();
 
     private static final String DAY = "com.examples.android.timetable.weekday";
     private String day;
@@ -50,29 +51,50 @@ public class Schedule extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        myDataset.add("one");
-        myDataset.add("two");
-        myDataset.add("three");
-        myDataset.add("four");
-        myDataset.add("five");
-        myDataset.add("six");
-        myDataset.add("seven");
-        myDataset.add("eight");
-        myDataset.add("nine");
-        myDataset.add("ten");
-        myDataset.add("eleven");
-        myDataset.add("twelve");
-        myDataset.add("thirteen");
-        myDataset.add("seven");
-        myDataset.add("eight");
-        myDataset.add("nine");
-        myDataset.add("ten");
-        myDataset.add("eleven");
-        myDataset.add("twelve");
-        myDataset.add("thirteen");
+        //Delete after add button is enabled
+        /*Lecture lec1;
+        lec1 = new Lecture();
+
+        lec1.setLectureDay("Monday");
+        lec1.setStartTime("08:30 AM");
+        lec1.setEndTime("09:25 AM");
+        lec1.setLectureName("Mon1");
+        new Lecture(this).addLecture(lec1);
+
+        lec1.setLectureDay("Tuesday");
+        lec1.setStartTime("08:30 AM");
+        lec1.setEndTime("09:25 AM");
+        lec1.setLectureName("Tue1");
+        new Lecture(this).addLecture(lec1);
+
+        lec1.setLectureDay("Tuesday");
+        lec1.setStartTime("09:25 AM");
+        lec1.setEndTime("10:20 AM");
+        lec1.setLectureName("Tue2");
+        new Lecture(this).addLecture(lec1);
+
+        lec1.setLectureDay("Wednesday");
+        lec1.setStartTime("10:30 AM");
+        lec1.setEndTime("11:25 AM");
+        lec1.setLectureName("Wed1");
+        new Lecture(this).addLecture(lec1);
+
+        lec1.setLectureDay("Thursday");
+        lec1.setStartTime("08:30 AM");
+        lec1.setEndTime("09:25 AM");
+        lec1.setLectureName("Thu1");
+        new Lecture(this).addLecture(lec1);
+
+        lec1.setLectureDay("Friday");
+        lec1.setStartTime("02:30 PM");
+        lec1.setEndTime("03:25 PM");
+        lec1.setLectureName("FRI1");
+        new Lecture(this).addLecture(lec1);*/
+
+        myDataset = new Lecture(this).getLectures(day);
 
         // specify an adapter
-        mAdapter = new RecyclerViewAdapter(myDataset);
+        mAdapter = new MyAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
 
     }
