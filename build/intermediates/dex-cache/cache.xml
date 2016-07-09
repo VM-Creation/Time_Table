@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_4a561f44c75daa4ae155a4a7a5dd5ed8dc7d0293\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_6d949b51caeca910f7350cdd66302578fbf05c15\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_1e81bdc79d493f31ae9140f812b5fa0b0fd0eb70\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="97f85489131d73f6effbecbe4848551658ed5ffc">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00608a475de880e28e3033aaf7698f52fb75198d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_ef2d40db4d19a6c7b2f495a7dcd115630fcf266c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_7155551d39aecc205b5053d46d4a42416de807d6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8d82b7b8cef486d0b74747835dcb8339b0ff5bd4">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9c79eff5e2a9a3f8dde9b9223670c129a1b5f8af\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_cd50927f3ab0cf35e06fbcff6ecc0ada07026fe9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_315d7060f130df9341ccc1fbb0f07a3d45208bec\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_fe38a8928bab17040bfbc07df7ef2f21da37b25d\classes.dex" />
+    </item>
+
+</items>
