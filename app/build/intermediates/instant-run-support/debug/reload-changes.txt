@@ -1,0 +1,3 @@
+CHANGED,C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\examples\android\timetable\AddLectureFragment$override.class
+CHANGED,C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Deepanshu\AndroidStudioProjects\TimeTable\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\examples\android\timetable\AddLectureFragment$1$override.class

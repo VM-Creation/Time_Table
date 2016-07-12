@@ -5,10 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ScheduleActivity">
 
     <TextView
@@ -16,16 +12,23 @@
         android:layout_height="wrap_content"
         android:text=""
         android:id="@+id/heading"
-        android:padding="10dp"
+        android:padding="7dp"
         android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#0084ff"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/lecture_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:padding="10dp"
         android:layout_weight="1"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"/>
 
 </LinearLayout>

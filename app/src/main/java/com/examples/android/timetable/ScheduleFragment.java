@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -55,7 +56,7 @@ public class ScheduleFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.schedule, container, false);
 
-        day = Calendar.getInstance().getDisplayName(Calendar.DAY_OF_WEEK,Calendar.LONG, Locale.UK);
+        day = getToday();
 
         heading = (TextView) v.findViewById(R.id.heading);
 
@@ -107,6 +108,7 @@ public class ScheduleFragment extends Fragment {
             day = data.getStringExtra(WeekDays.DAY);
             updateSchedule(day);
         }else if (requestCode == CHECK_SUCCESS) {
+            Toast.makeText(getContext(),"Lecture Sucessfully added!!",Toast.LENGTH_SHORT).show();
             updateSchedule(day);
         }
     }
@@ -118,5 +120,13 @@ public class ScheduleFragment extends Fragment {
 
         mAdapter = new MyAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
+    }
+
+    public static String getToday(){
+        String today = Calendar.getInstance().getDisplayName(Calendar.DAY_OF_WEEK,Calendar.LONG, Locale.UK);
+        if (today.equals("Saturday")||today.equals("Sunday")){
+            today = "Monday";
+        }
+        return today;
     }
 }

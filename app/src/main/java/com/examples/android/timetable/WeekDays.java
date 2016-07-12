@@ -8,9 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.Calendar;
-import java.util.Locale;
-
 public class WeekDays extends AppCompatActivity {
 
     TextView today,monday,tuesday,wednesday, thursday,friday;
@@ -30,7 +27,7 @@ public class WeekDays extends AppCompatActivity {
         today.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendResult(Activity.RESULT_OK, Calendar.getInstance().getDisplayName(Calendar.DAY_OF_WEEK,Calendar.LONG, Locale.UK));
+                sendResult(Activity.RESULT_OK, ScheduleFragment.getToday());
             }
         });
         monday = (TextView) findViewById(R.id.monday);

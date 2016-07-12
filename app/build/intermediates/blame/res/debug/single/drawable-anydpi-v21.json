@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_black_24dp.xml",
-        "source": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_black_24dp.xml"
+        "merged": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_24dp.xml",
+        "source": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_add_24dp.xml",
+        "source": "C:\\Users\\Deepanshu\\AndroidStudioProjects\\TimeTable\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_24dp.xml"
     }
 ]

@@ -3,13 +3,13 @@
       xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/menu_item_new_lecture"
           android:icon="@drawable/ic_add_24dp"
-          android:title="Add"
+          android:title="Add Lecture"
           app:showAsAction="ifRoom|withText"/>
 
     <item
         android:id="@+id/menu_item_show_weekdays"
         android:icon="@drawable/ic_menu_24dp"
-        android:title="Days"
+        android:title="Weekdays"
         app:showAsAction="ifRoom"/>
 
 </menu>

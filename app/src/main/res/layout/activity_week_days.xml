@@ -5,10 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.examples.android.timetable.WeekDays">
 
     <TextView
@@ -17,9 +13,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="TODAY"
         android:id="@+id/today"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center_vertical|center_horizontal"
         android:textAlignment="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0084ff"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -27,9 +28,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Monday"
         android:id="@+id/monday"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center_vertical|center_horizontal"
         android:textAlignment="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0084ff"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -37,9 +43,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Tuesday"
         android:id="@+id/tuesday"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center_vertical|center_horizontal"
         android:textAlignment="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0084ff"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -47,9 +59,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Wednesday"
         android:id="@+id/wednesday"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center_vertical|center_horizontal"
         android:textAlignment="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0084ff"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -57,9 +75,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Thrusday"
         android:id="@+id/thursday"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:gravity="center_vertical|center_horizontal"
         android:textAlignment="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0084ff"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -67,7 +91,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Friday"
         android:id="@+id/friday"
-        android:padding="16dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"/>
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"/>
 </LinearLayout>

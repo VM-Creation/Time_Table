@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content">
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/lec_name"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Lecture Name"/>
-    </android.support.design.widget.TextInputLayout>
+            android:paddingTop="10dp">
 
-    <TimePicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lec_start_time"
-        android:timePickerMode="spinner"/>
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/lec_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lecture Name"/>
+        </android.support.design.widget.TextInputLayout>
 
-    <TimePicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lec_end_time"
-        android:timePickerMode="spinner"/>
+        <TimePicker
+            android:id="@+id/lec_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"/>
 
-</LinearLayout>
+        <TimePicker
+            android:id="@+id/lec_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"/>
+
+    </LinearLayout>
+</ScrollView>

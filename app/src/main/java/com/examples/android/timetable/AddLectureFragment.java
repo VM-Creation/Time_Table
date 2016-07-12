@@ -12,7 +12,6 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 /**
  * Created by Deepanshu on 08-07-2016.
@@ -21,6 +20,7 @@ public class AddLectureFragment extends DialogFragment {
     TextInputEditText lecName;
     TimePicker lecStartTime, lecEndTime;
     String lectureDay, lectureName, lectureStartTime, lectureEndTime;
+    ChangeTimeFormat mChangeTimeFormat;
 
     private static final String ARG_DAY = "day";
 
@@ -43,6 +43,8 @@ public class AddLectureFragment extends DialogFragment {
         lecStartTime = (TimePicker) v.findViewById(R.id.lec_start_time);
         lecEndTime = (TimePicker) v.findViewById(R.id.lec_end_time);
 
+        mChangeTimeFormat = new ChangeTimeFormat();
+
         return new AlertDialog.Builder(getActivity())
                 .setView(v)
                 .setTitle("New Lecture")
@@ -51,13 +53,12 @@ public class AddLectureFragment extends DialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                         lectureName = lecName.getText().toString();
                         if (Build.VERSION.SDK_INT >= 23) {
-                            lectureStartTime = lecStartTime.getHour() + ":" + lecStartTime.getMinute();
-                            lectureEndTime = lecEndTime.getHour() + ":" + lecEndTime.getHour();
+                            lectureStartTime = mChangeTimeFormat.set(lecStartTime.getHour(), lecStartTime.getMinute());
+                            lectureEndTime = mChangeTimeFormat.set(lecEndTime.getHour(), lecEndTime.getMinute());
                         }else {
-                            lectureStartTime = lecStartTime.getCurrentHour() + ":" + lecStartTime.getCurrentMinute();
-                            lectureEndTime = lecEndTime.getCurrentHour() + ":" + lecEndTime.getCurrentHour();
+                            lectureStartTime = mChangeTimeFormat.set(lecStartTime.getCurrentHour(), lecStartTime.getCurrentMinute());
+                            lectureEndTime = mChangeTimeFormat.set(lecEndTime.getCurrentHour(), lecEndTime.getCurrentMinute());
                         }
-                        Toast.makeText(getContext(),lectureDay+" "+lectureName+" "+lectureStartTime+" "+lectureEndTime,Toast.LENGTH_SHORT).show();
                         Lecture newLecture;
                         newLecture = new Lecture();
 
@@ -70,6 +71,14 @@ public class AddLectureFragment extends DialogFragment {
                         Intent intent = new Intent();
                         getTargetFragment()
                                 .onActivityResult(getTargetRequestCode(), Activity.RESULT_OK, intent);
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent();
+                        getTargetFragment()
+                                .onActivityResult(getTargetRequestCode(), Activity.RESULT_CANCELED, intent);
                     }
                 })
                 .create();
